@@ -33,6 +33,8 @@ class CurrencyConverterApp:
         print("Valute disponibile:", self.converter.rates.keys())
         from_currency = input("Introduceți valuta inițială: ")
         to_currency = input("Introduceți valuta de destinație: ")
+        
+       
         amount = float(input("Introduceți suma: "))
 
         result = self.converter.convert(from_currency.upper(), to_currency.upper(), amount)
